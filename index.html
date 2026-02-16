@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tedd James – Portfolio</title>
+
+  <!-- Editorial + modern font pairing -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- Top bar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Tedd James</a>
+      <nav class="nav">
+        <a href="#work" class="nav-link">Portfolio</a>
+        <span class="divider">•</span>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1 class="hero-title">Essence of Elegance</h1>
+      <p class="hero-subtitle">Refined Portraits &amp; Visual Aesthetics</p>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- Intro -->
+  <section id="work" class="intro">
+    <div class="container">
+      <h2 class="intro-eyebrow"> Portfolio</h2>
+      <p class="intro-lead">
+        A curated showcase of my natural look, confidence, and potential.
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="gallery">
+    <div class="container grid">
+      <!-- Replace the src values with your actual image paths -->
+      <figure class="tile">
+        <img src="images/Headshot.jpg" alt="Headshot" loading="lazy">
+      </figure>
+
+      <figure class="tile">
+        <img src="images/Side profile.jpg" alt="Side-profile" loading="lazy">
+      </figure>
+
+      <figure class="tile">
+        <img src="images/Full Body - Front.jpg" alt="Full Body - front" loading="lazy">
+      </figure>
+
+      <figure class="tile">
+        <img src="images/Full Body - Side.jpg" alt="Full Body - Side" loading="lazy">
+      </figure>
+
+      <figure class="tile">
+        <img src="images/Full Body - Back.jpg" alt="Full Body - Back" loading="lazy">
+      </figure>
+
+      <figure class="tile">
+        <img src="images/work-06.jpg" alt="Outfit Showcase I" loading="lazy">
+      </figure>
+      <figure class="tile">
+        <img src="images/work-06.jpg" alt="Outfit Showcase II" loading="lazy">
+      </figure>
+      <figure class="tile">
+        <img src="images/work-06.jpg" alt="Outfit Showcase III" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h3 class="contact-title">Contact</h3>
+      <div class="contact-details">
+        <p>+60-17-322-5661</p>
+        <p><a href="mailto:imsteadname@gmail.com">iamteddjames@gmail.com</a></p>
+        <p>Malaysia, Kuala Lumpur. Seri Kembangan, Selangor.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Tedd James</span>
+    </div>
+  </footer>
+
+  <script>
+    // Keep the footer year current
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
