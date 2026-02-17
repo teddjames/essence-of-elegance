@@ -5,22 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tedd James – Portfolio</title>
 
-  <!-- Editorial + modern font pairing -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="index.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <!-- Top bar -->
-  <header class="site-header">
+
+  <!-- Header -->
+  <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="#home">Tedd James</a>
-      <nav class="nav">
-        <a href="#work" class="nav-link">Portfolio</a>
+      <a href="#home" class="logo">Tedd James</a>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open menu"
+        aria-controls="primary-nav"
+        aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav" id="primary-nav" hidden>
+        <a href="#work">Portfolio</a>
         <span class="divider">•</span>
-        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -29,55 +43,33 @@
   <section id="home" class="hero">
     <div class="container">
       <h1 class="hero-title">Essence of Elegance</h1>
-      <p class="hero-subtitle">Refined Portraits &amp; Visual Aesthetics</p>
+      <p class="hero-subtitle">Refined Portraits & Visual Aesthetics</p>
     </div>
   </section>
 
   <hr class="rule" />
 
-  <!-- Intro -->
+  <!-- Portfolio -->
   <section id="work" class="intro">
     <div class="container">
-      <h2 class="intro-eyebrow"> Portfolio</h2>
+      <h2 class="intro-eyebrow">Portfolio</h2>
       <p class="intro-lead">
         A curated showcase of my natural look, confidence, and potential.
       </p>
     </div>
   </section>
 
-  <!-- Gallery Grid -->
+  <!-- Gallery -->
   <section class="gallery">
     <div class="container grid">
-      <!-- Replace the src values with your actual image paths -->
-      <figure class="tile">
-        <img src="images/9-DSC_0007.jpg" alt="Outfit Showcase 1" loading="lazy">
-      </figure>
-
-      <figure class="tile">
-        <img src="images/7-DSC_0010.jpg"  alt="Outfit Showcase 2" loading="lazy">
-      </figure>
-
-      <figure class="tile">
-        <img src="images/11-DSC_0004.jpg" alt="FOutfit Showcase 3" loading="lazy">
-      </figure>
-
-      <figure class="tile">
-        <img src="images/8-DSC_0008.jpg" alt="Outfit Showcase 4" loading="lazy">
-      </figure>
-
-      <figure class="tile">
-        <img src="images/12-DSC_0003.jpg" alt="Outfit Showcase 5" loading="lazy">
-      </figure>
-
-      <figure class="tile">
-        <img src="images/2-DSC_0023.jpg" alt="Outfit Showcase 6" loading="lazy">
-      </figure>
-      <figure class="tile">
-        <img src="images/1-DSC_0024.jpg" alt="Outfit Showcase 7" loading="lazy">
-      </figure>
-      <figure class="tile">
-        <img src="images/3-DSC_0022.jpg" alt="Outfit Showcase 8" loading="lazy">
-      </figure>
+      <figure class="tile"><img src="images/9-DSC_0007.jpg" alt="Portfolio image"></figure>
+      <figure class="tile"><img src="images/7-DSC_0010.jpg" alt="Portfolio image"></figure>
+      <figure class="tile"><img src="images/11-DSC_0004.jpg" alt="Portfolio image"></figure>
+      <figure class="tile"><img src="images/8-DSC_0008.jpg" alt="Portfolio image"></figure>
+      <figure class="tile"><img src="images/12-DSC_0003.jpg" alt="Portfolio image"></figure>
+      <figure class="tile"><img src="images/2-DSC_0023.jpg" alt="Portfolio image"></figure>
+      <figure class="tile"><img src="images/1-DSC_0024.jpg" alt="Portfolio image"></figure>
+      <figure class="tile"><img src="images/3-DSC_0022.jpg" alt="Portfolio image"></figure>
     </div>
   </section>
 
@@ -86,8 +78,8 @@
     <div class="container">
       <h3 class="contact-title">Contact</h3>
       <div class="contact-details">
-        <p>+60-17-322-5661</p>
-        <p><a href="mailto:imsteadname@gmail.com">iamteddjames@gmail.com</a></p>
+        <p><a href="tel:+60173225661">+60 17-322 5661</a></p>
+        <p><a href="mailto:iamteddjames@gmail.com">iamteddjames@gmail.com</a></p>
         <p>Malaysia, Kuala Lumpur. Seri Kembangan, Selangor.</p>
       </div>
     </div>
@@ -96,12 +88,12 @@
   <footer class="footer">
     <div class="container footer-inner">
       <span>© <span id="year"></span> Tedd James</span>
+      <a href="#top">↑</a>
     </div>
   </footer>
 
-  <script>
-    // Keep the footer year current
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <!-- External JavaScript -->
+  <script src="index.js"></script>
+
 </body>
 </html>
